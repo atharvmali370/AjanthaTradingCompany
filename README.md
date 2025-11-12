@@ -20,8 +20,6 @@ It is designed to showcase company information, services, and provide a contact 
 - Download or clone this repository
 - Open the folder in VS Code or any IDE
 - Create and activate a virtual environment
-- Install dependencies:
-pip install -r requirements.txt
 - Run the server:
 py manage.py runserver
 - Open the project in your browser at:
