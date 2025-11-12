@@ -1,1 +1,18 @@
+Create Environment File :-
+python -m venv env
+env\Scripts\activate.bat
+pip install django 
+
+
+Create Superuser :- ( If not exists )
+py manage.py createsuperuser
+
+
+Install Forms :-
+pip install django-crispy-forms
+pip install crispy-bootstrap4
+
+
+Run Project :-
+py manage.py runserver
 
