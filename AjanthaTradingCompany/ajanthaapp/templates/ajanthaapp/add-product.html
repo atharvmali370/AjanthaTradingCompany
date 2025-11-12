@@ -1,0 +1,61 @@
+{% extends 'ajanthaapp/base.html' %}
+{% load static %}
+
+{% block head %}
+
+<title>ajanthaapp-add-product</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Add Product Here</h1>
+
+<form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+    <div class="form-group">
+        <label for="name">Product Name</label>
+        <input type="text" class="form-control" name="pname" 
+            placeholder="Enter Product Name">
+    </div>
+
+    <div class="form-group">
+        <label for="Discription">Product Code</label>
+        <input type="text" class="form-control" name="pcode" aria-describedby="emailHelp"
+            placeholder="Enter Product Code">
+    </div>
+
+    <div class="form-group">
+        <label for="Discription">Product Price</label>
+        <input type="text" class="form-control" name="pprice" aria-describedby="emailHelp"
+            placeholder="Enter Product Price">
+    </div>
+
+    <div class="form-group">
+        <label for="Discription">Comment</label> <!--  (Include of all taxes) -->
+        <input type="text" class="form-control" name="pcomment" aria-describedby="emailHelp"
+            placeholder="Enter Product Discription">
+    </div>
+
+    <div class="form-group">
+        <label for="Discription">Image</label>
+        <input type="file" class="form-control" name="image">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Category</label>
+        </div>
+        <select class="custom-select" name="category" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+                {% for cat in category %}
+                    <option value="{{cat.id}}">{{ cat.name }}</option>
+                {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>
+
+{% endblock %}
+

@@ -1,0 +1,721 @@
+{% extends 'ajanthaapp/base.html' %}
+{% load static %}
+
+{% block head %}
+
+<title>ajanthaapp-index</title>
+
+<link rel="stylesheet" href="{% static 'ajanthaapp/css/style.css' %}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+{% endblock %}
+
+
+{% block body %}
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+        <div class="container-fluid"> 
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left:0; padding-left:0;">
+                <img src="images/logo.png" alt="Logo" style="height:60px; margin-right:10px;">
+                <span>Ajantha Trading Company</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+  <main>
+
+    <section class="hero-section hero-slide d-flex justify-content-center align-items-center" id="section_1">
+
+      <!-- Background slideshow layers with inline background-image -->
+      <div class="slide" style="background-image: url('{% static "ajanthaapp/images/slide1.webp" %}');"></div>
+      <div class="slide" style="background-image: url('{% static "ajanthaapp/images/slide2.webp" %}');"></div>
+      <div class="slide" style="background-image: url('{% static "ajanthaapp/images/slide3.webp" %}');"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12 text-center mx-auto">
+            <div class="hero-section-text">
+              <small class="section-small-title">
+                Your Trusted Hardware & Lighting Partner <i class="hero-icon bi-house"></i>
+              </small>
+
+              <h1 class="hero-title text-white mt-2 mb-4">
+                From Foundation to Finish, We’ve Got You Covered
+              </h1>
+
+              <div class="hero-btn d-flex justify-content-center align-items-center">
+                <a class="bi-arrow-down hero-btn-link smoothscroll" href="#section_2"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="about-section section-padding" id="section_2">
+      <div style="margin-left: 70px;">
+        <!-- <div class="container"> -->
+        <div class="row align-items-center">
+
+          <!-- LEFT CONTENT -->
+          <div class="col-lg-5 col-12">
+            <small class="section-small-title">Our Story</small>
+
+            <h2 class="mt-2 mb-4"><span class="text-muted">Introducing</span> Ajantha</h2>
+
+            <h3 class="text-muted mb-3">Since 2014, Jaquar Authorized Dealer </h3>
+
+            <p>
+              Jaquar Group is a leading provider of complete bathroom solutions near me in Vasumbe Phata, Sangli, known for its exceptional quality, style, and comfort. We offer a wide range of premium sanitary items designed to suit all interior styles and budgets, from luxurious to affordable.
+            </p>
+          </div>
+
+          <!-- RIGHT IMAGES -->
+          <div class="col-lg-7 col-12 d-flex justify-content-center align-items-center gap-5">
+            <img src="{% static 'ajanthaapp/images/slide1.webp' %}" class="img-fluid rounded-circle shadow"
+              alt="Design ideas" style="width: 220px; height: 220px; object-fit: cover; margin-right: 50px;">
+
+            <img src="{% static 'ajanthaapp/images/slide2.webp' %}" class="img-fluid rounded-circle shadow"
+              alt="Living room" style="width: 320px; height: 320px; object-fit: cover;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="featured-section section-padding" style="background: url('{% static "ajanthaapp/images/slide1.webp" %}') no-repeat center center / cover; height: 400px;">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="custom-block featured-custom-block bg-dark bg-opacity-50 p-6 rounded-box">
+              <h2 class="mt-2 mb-4">Opening Hours</h2>
+              <div class="d-flex">
+                <i class="featured-icon bi-clock me-3"></i>
+                <div>
+                  <p class="mb-2">Mon - Friday ~ <strong>8:00 AM - 8:00 PM</strong></p>
+                  <p>Sunday ~ <strong>Closed</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section class="shop-section section-padding">
+      <div style="margin-left: 70px; margin-right: 70px;">
+
+        <!-- <div class="container"> -->
+        <div class="row">
+
+          <div class="col-lg-12 col-12">
+            <small class="section-small-title">Ajantha Design Shop</small>
+
+            <h2 class="mt-2 mb-4"><span class="tooplate-red">Our</span> Products</h2>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/livingroom-tiles">
+                  <img src="{% static 'ajanthaapp/images/Livingroom.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/livingroom-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>LIVING ROOM TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/bedroom-tiles">
+                  <img src="{% static 'ajanthaapp/images/Bedroom.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/bedroom-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>BEDROOM TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/bathroom-tiles">
+                  <img src="{% static 'ajanthaapp/images/Bathroom.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/bathroom-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>BATHROOM TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/kitchen-tiles">
+                  <img src="{% static 'ajanthaapp/images/kitchen.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/kitchen-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>KITCHEN TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/outdoor-tiles">
+                  <img src="{% static 'ajanthaapp/images/Outdoor.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/outdoor-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>OUTDOOR TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/balcony-tiles">
+                  <img src="{% static 'ajanthaapp/images/Balcony.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/balcony-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>BALCONY TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/elevation-tiles">
+                  <img src="{% static 'ajanthaapp/images/Elevation.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/elevation-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>ELEVATION TILES </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/staircase-tiles">
+                  <img src="{% static 'ajanthaapp/images/Staircase.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/staircase-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>STAIRCASE TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/commercial-tiles">
+                  <img src="{% static 'ajanthaapp/images/Commercial.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/commercial-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>COMMERCIAL TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <div class="shop-thumb">
+              <div class="shop-image-wrap">
+                <a href="https://www.simpolo.com/tiles/countertop-tiles">
+                  <img src="{% static 'ajanthaapp/images/Countertop.webp' %}" class="shop-image img-fluid" alt="">
+                </a>
+
+                <div class="shop-btn-wrap">
+                  <a href="https://www.simpolo.com/tiles/countertop-tiles"
+                    class="shop-btn custom-btn btn d-flex align-items-center align-items-center">Learn
+                    more</a>
+                </div>
+              </div>
+
+              <div class="shop-body">
+                <h4>COUNTERTOP TILES</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">1</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section_3" class="review-section" style="position: relative; background-color: #f8f9fa;">
+      <div style="margin-left: 70px; margin-right: 70px;">
+        <div class="row">
+
+          <!-- Header + Buttons -->
+          <div class="col-lg-12 col-12 d-flex justify-content-between align-items-center">
+            <div>
+              <small style="font-size: 14px; color: #a11d1d;">Happy customers</small>
+              <h2 style="font-weight: 900; color: #333; margin-top: 10px;">Reviews</h2>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div style="display: flex; gap: 10px;">
+              <button id="prevBtn"
+                style="background-color: orange; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 18px; cursor: pointer;">
+                ‹
+              </button>
+              <button id="nextBtn"
+                style="background-color: orange; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 18px; cursor: pointer;">
+                ›
+              </button>
+            </div>
+          </div>
+
+          <!-- Scroll Wrapper -->
+          <div id="reviewContainer" style="
+        display: flex; 
+        gap: 30px; 
+        overflow-x: auto; 
+        padding: 20px 0; 
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+      ">
+
+            <!-- Review Card -->
+            <div class="card text-center border-0" style="flex: 0 0 auto; background: #fff; width: 260px; height: 260px; 
+                 box-shadow: 0 5px 15px rgba(0,0,0,0.15); scroll-snap-align: center;">
+              <div class="card-body" style="padding: 20px;">
+                <img src="{% static 'ajanthaapp/images/Review1.jpg' %}" alt="Prasad"
+                  style="width: 70px; height: 70px; border-radius: 50%; margin-bottom: 10px;">
+                <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Prasad</h5>
+                <small style="color: #999;">Customer</small>
+                <p style="margin: 10px 0; font-style: italic; color: #555; font-size: 14px;">
+                  Best Sanitary ware shop for Flooring and pipes etc...
+                </p>
+                <div style="color: #ffc107; font-size: 16px;">
+                  <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="card text-center border-0" style="flex: 0 0 auto; background: #fff; width: 260px; height: 260px; 
+                 box-shadow: 0 5px 15px rgba(0,0,0,0.15); scroll-snap-align: center;">
+              <div class="card-body" style="padding: 20px;">
+                <img src="{% static 'ajanthaapp/images/Review2.jpeg' %}" alt="Atharv"
+                  style="width: 70px; height: 70px; border-radius: 50%; margin-bottom: 10px;">
+                <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Atharv</h5>
+                <small style="color: #999;">Customer</small>
+                <p style="margin: 10px 0; font-style: italic; color: #555; font-size: 14px;">
+                  Good display and product explanation
+                </p>
+                <div style="color: #ffc107; font-size: 16px;">
+                  <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i
+                    class="bi-star-fill"></i><i class="bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card text-center border-0" style="flex: 0 0 auto; background: #fff; width: 260px; height: 260px; 
+                 box-shadow: 0 5px 15px rgba(0,0,0,0.15); scroll-snap-align: center;">
+              <div class="card-body" style="padding: 20px;">
+                <img src="{% static 'ajanthaapp/images/Review3.jpg' %}" alt="Sangram"
+                  style="width: 70px; height: 70px; border-radius: 50%; margin-bottom: 10px;">
+                <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Sangram</h5>
+                <small style="color: #999;">Customer</small>
+                <p style="margin: 10px 0; font-style: italic; color: #555; font-size: 14px;">
+                  Good price and good service and nice experience...
+                </p>
+                <div style="color: #ffc107; font-size: 16px;">
+                  <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i
+                    class="bi-star-fill"></i><i class="bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card text-center border-0" style="flex: 0 0 auto; background: #fff; width: 260px; height: 260px; 
+                 box-shadow: 0 5px 15px rgba(0,0,0,0.15); scroll-snap-align: center;">
+              <div class="card-body" style="padding: 20px;">
+                <img src="{% static 'ajanthaapp/images/Review4.jpg' %}" alt="Digamber"
+                  style="width: 70px; height: 70px; border-radius: 50%; margin-bottom: 10px;">
+                <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Digamber</h5>
+                <small style="color: #999;">Customer</small>
+                <p style="margin: 10px 0; font-style: italic; color: #555; font-size: 14px;">
+                  It was a good experience it is the best trading company in tasgaon
+                </p>
+                <div style="color: #ffc107; font-size: 16px;">
+                  <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i
+                    class="bi-star-fill"></i><i class="bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="card text-center border-0" style="flex: 0 0 auto; background: #fff; width: 260px; height: 260px; 
+                 box-shadow: 0 5px 15px rgba(0,0,0,0.15); scroll-snap-align: center;">
+              <div class="card-body" style="padding: 20px;">
+                <img src="{% static 'ajanthaapp/images/Review5.jpg' %}" alt="Kunal"
+                  style="width: 70px; height: 70px; border-radius: 50%; margin-bottom: 10px;">
+                <h5 style="font-weight: 600; color: #333; margin-bottom: 5px;">Kunal</h5>
+                <small style="color: #999;">Customer</small>
+                <p style="margin: 10px 0; font-style: italic; color: #555; font-size: 14px;">
+                  Latest & premium quality sanitation products..
+                </p>
+                <div style="color: #ffc107; font-size: 16px;">
+                  <i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i
+                    class="bi-star-fill"></i><i class="bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-12 col-12 text-center mt-5">
+            <p style="color: #333;">
+              Write some reviews on
+              <a href="https://m.facebook.com/ajanthatradingcompany/"
+                style="background-color: #1877f2; color: #fff; padding: 8px 20px; border-radius: 30px; text-decoration: none; margin-left: 10px;">
+                <i class="bi-facebook me-2"></i> Facebook
+              </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Optional JS for scroll buttons -->
+      <script>
+        const container = document.getElementById('reviewContainer');
+        document.getElementById('prevBtn').onclick = () => container.scrollBy({ left: -300, behavior: 'smooth' });
+        document.getElementById('nextBtn').onclick = () => container.scrollBy({ left: 300, behavior: 'smooth' });
+      </script>
+    </section>
+
+
+    <section class="contact-section" id="section_4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 230">
+        <path fill="#f9f9f9" fill-opacity="1"
+          d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+      </svg>
+      <div style="margin-left: 70px; margin-right: 70px;">
+        <!-- <div class="container"> -->
+        <div class="row">
+
+          <div class="col-lg-12 col-12">
+            <small class="section-small-title">Ask anything.</small>
+
+            <h2 class="mb-4">Say Hello</h2>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            {% if flag %}
+            <p>Contact Details Saved</p>
+            {% endif %}
+            <form class="custom-form contact-form" action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+             <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mb-3">
+                  <label for="first_name">First Name</label>
+                  <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Jack"             required>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mb-3">
+                  <label for="last_name">Last Name</label>
+                  <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Doe" required>
+                </div>
+              </div>
+            
+             <div class="mb-3">
+               <label for="email">Email Address</label>
+               <input type="email" name="email" id="email" class="form-control" placeholder="Jackdoe@gmail.com"             required>
+             </div>
+            
+             <div class="mb-3">
+               <label for="mobile">Mobile</label>
+               <input type="text" name="mobile" id="mobile" class="form-control" placeholder="+91 XXXXXXXXXX"             required>
+             </div>
+            
+             <div class="mb-3">
+               <label for="message">Message</label>
+               <textarea name="message" id="message" rows="6" class="form-control" placeholder="What can we help you?            "></textarea>
+             </div>
+            
+             <div class="mb-3">
+               <button type="submit" class="btn btn-primary">Send</button>
+             </div>
+            </form>
+
+          </div>
+
+
+          <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+            <div class="custom-block contact-info">
+
+              <h3 class="text-white mb-2">Store</h3>
+
+              <p class="text-white mb-2">
+                <i class="contact-icon bi-geo-alt me-1"></i>
+
+                Tasgaon-Sangli Road, Opp. Datt Mandir, Tasgaon Maharashtra, India
+              </p>
+
+              <h3 class="text-white mt-3 mb-2">Contact Info</h3>
+
+              <div class="d-flex flex-wrap">
+                <p class="text-white mb-2 me-4">
+                  <i class="contact-icon bi-telephone me-1"></i>
+
+                  <a href="tel: +917756043700" class="text-white">
+                    7756043700 | 9069983700 | 9172533700
+                  </a> <br>
+
+                  <i class="contact-icon bi-envelope me-1"></i>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ajanthatrading.co999@gmail.com&su=Business Inquiry&body=Hello, I would like to know more about your services."
+                    target="_blank" class="text-white">
+                    ajanthatrading.co999@gmail.com
+                  </a>
+                </p>
+
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d804.163832306806!2d74.60465263694235!3d17.02710548313226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc13fcd00000001%3A0xa75709b2b1c3f887!2sJaquar%20Authorized%20Dealer%20-%20Ajantha%20Trading%20Company!5e1!3m2!1sen!2sin!4v1757041826696!5m2!1sen!2sin"
+                width="520" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <svg class="mb-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 319">
+      <path fill="#36363e" fill-opacity="1"
+        d="M0,96L40,117.3C80,139,160,181,240,186.7C320,192,400,160,480,149.3C560,139,640,149,720,176C800,203,880,245,960,250.7C1040,256,1120,224,1200,229.3C1280,235,1360,277,1400,298.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </main>
+
+  <footer class="site-footer section-padding text-white">
+    <div style="margin-left: 70px; margin-right: 70px;">
+      <div class="row">
+
+        <!-- Left: Company Info -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column justify-content-start pe-4">
+          <h3 class="mb-2 text-head">Ajantha Trading Company</h3>
+          <p class="text-body">Since 2006, We crafted interior products for better spaces</p>
+        </div>
+
+        <!-- Center: Store Info -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column justify-content-start pe-4">
+          <h3 class="mb-2 text-head">Store</h3>
+          <p class="text-body">
+            <i class="bi-geo-alt me-2"></i>
+            Tasgaon-Sangli Road, Opp. Datt Mandir, Tasgaon, Maharashtra, India
+          </p>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column justify-content-start pe-4">
+          <h3 class="mb-2 text-head">Contact Info</h3>
+          <p class="mb-1">
+            <i class="bi-telephone me-2"></i>
+            <a href="tel:+917756043700" class="text-body">7756043700 </a>
+          </p>
+          <!-- <p class="mb-1">
+            <i class="bi-telephone me-2"></i>
+            <a href="tel:+917756043700" class="text-body">9069983700 </a>
+          </p>
+          <p class="mb-1">
+            <i class="bi-telephone me-2"></i>
+            <a href="tel:+917756043700" class="text-body">9172533700 </a>
+          </p> -->
+
+          <p class="mb-0">
+            <i class="bi-envelope me-2"></i>
+            <a href="mailto:ajanthatrading.co999@gmail.com" class="text-body">
+              ajanthatrading.co999@gmail.com
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Social -->
+      <div class="d-flex ">
+        <p class="mb-0 mt-4">© Ajantha Trading Company 2025</p>
+        <ul class="social-icon d-flex mb-0 mt-4">
+          <li class="social-icon-item ms-3">
+            <a class="text-white" href="https://m.facebook.com/ajanthatradingcompany/"><i class="bi-facebook"></i></a>
+          </li>
+          <li class="social-icon-item ms-3">
+            <a class="text-white" href="https://www.instagram.com/ajantha_trading_co?igsh=dm52ZzZnY3Vtdzdi"><i class="bi-instagram"></i></a>
+          </li>
+          <li class="social-icon-item ms-3">
+            <a class="text-white" href="tel:+917756043700"><i class="bi-whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+
+
+  <!-- JAVASCRIPT FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/click-scroll.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+{% endblock %}

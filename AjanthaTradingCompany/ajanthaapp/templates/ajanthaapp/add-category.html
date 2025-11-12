@@ -1,0 +1,30 @@
+{% extends 'ajanthaapp/base.html' %}
+{% load static %}
+
+{% block head %}
+
+<title>ajanthaapp-add-category</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Add Category Here</h1>
+
+{% if flag %}
+   <p>Category Added Successfully</p>
+{% endif %}
+
+<form action="" method="post">{% csrf_token %}
+    <div class="form-group">
+        <label for="name">Category Name</label>
+        <input type="text" class="form-control" name="cname" aria-describedby="emailHelp"
+            placeholder="Enter Category Name">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Category</button>
+
+</form>
+
+{% endblock %}
